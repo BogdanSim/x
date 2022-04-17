@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url("bgpic.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    background-color: rgba(224, 184, 7, 0.65);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    border: .4rem solid black;
+}
+
+form h3{
+    color: #070700;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-family: 'Londrina Shadow', cursive;
+}
+
+form input, form textarea{
+    border: .3rem solid black;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background: rgba(245, 226, 159, 0.66);
+    font-size: 16px;
+    color: #070700;
+}
+
+form button{
+    padding: 15px;
+    background: rgb(224,184,7);
+    color: #070700;
+    font-size: 18px;
+    border: .3rem solid black;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+
+form button:hover{
+    background-color: rgb(147, 125, 5);
+
+}

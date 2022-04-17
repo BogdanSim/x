@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Contact me</h3>
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Phone number" required>
+                <textarea id="message" rows="4" placeholder="Message"></textarea>
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                   SecureToken:"64bf7a18-bcf5-41c3-ae8a-981c6d1651ee",
+                    To : 'simionbogdanflorin@gmail.com',
+                    From : document.getElementById("email").value,
+                    Subject : "Contact form",
+                    Body : "And this is the body"
+                }).then(
+                    message => alert(message)
+                );
+
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space{
+    height: 3vh
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.container .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ccc;
+    margin: 7px;
+}
+
+.container .coin-price .logo{
+    width: 70px;
+    margin-right: 10px;
+}
+.container .coin-price .logo img{
+    width: 100%;
+}
+.container .coin-price div{
+    display: block;
+}
+.container .coin-price div h1{
+    font-size: 20px;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+.description a{
+    font-style: italic;
+    text-decoration: none;
+    color: #0dc500;
+}
+footer{
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17vh;
+
+}
+
+@media only screen and (max-width: 850px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+    .description{
+        margin-left: 5vw;
+    }
+}

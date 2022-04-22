@@ -1,66 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
-*{
-    margin:0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
 
-
-.container{
-    width: 100%;
+}
+section {
     height: 100vh;
-    background: url("bgpic.jpg");
-    background-position: center;
+    width: 100vw;
+    background:url("bg.jpg");
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-form{
-    background-color: rgba(224, 184, 7, 0.65);
-    display: flex;
     flex-direction: column;
-    padding: 2vw 4vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius: 10px;
+}
+
+.container {
+    width: 90vw;
+    max-width: 30vw;
+    margin: 0 auto;
+    padding: 1.2rem;
+    background-color: rgba(107, 99, 66, 0.22);
+    border-radius: .5rem;
+    margin-bottom: 1.2rem;
+    color: rgba(0, 0, 0, 0.65);
+    font-weight: bold;
+    border: .2rem solid rgba(0, 0, 0, 0.35);
+}
+
+.form-group {
+    width: 100%;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: .5rem;
+    font-size: 1.1rem;
+    border: .1rem solid rgba(0, 0, 0, 0.65);
+    margin-top: .5rem;
+    background-color: rgba(246, 238, 238, 0.26);
+}
+
+textarea {
+    resize: vertical;
+}
+button[type="submit"] {
+    width: 100%;
+    background-color: rgba(9, 108, 3, 0.53);
+    border: none;
+    outline: none;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
     text-align: center;
-    border: .4rem solid black;
-}
-
-form h3{
-    color: #070700;
-    font-weight: 800;
-    margin-bottom: 20px;
-    font-size: 5rem;
-    font-family: 'Londrina Shadow', cursive;
-}
-
-form input, form textarea{
-    border: .3rem solid black;
-    margin: 10px 0;
-    padding: 20px;
-    outline: none;
-    background: rgba(245, 226, 159, 0.66);
-    font-size: 16px;
-    color: #070700;
-}
-
-form button{
-    padding: 15px;
-    background: rgb(224,184,7);
-    color: #070700;
-    font-size: 18px;
-    border: .3rem solid black;
-    outline: none;
     cursor: pointer;
-    width: 150px;
-    margin: 20px auto 0;
-    border-radius: 30px;
-    font-weight: bolder;
+    margin-top: .7rem;
+    transition: 0.3s ease background-color;
 }
-
-form button:hover{
-    background-color: rgb(147, 125, 5);
-
+button[type="submit"]:hover {
+    background-color: rgba(171, 241, 180, 0.42);
+}
+#status {
+    width: 90%;
+    max-width: 30vw;
+    text-align: center;
+    padding: .8rem;
+    margin: 0 auto;
+    border-radius: .5rem;
+}
+#status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }

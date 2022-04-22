@@ -6,7 +6,7 @@ html {
 
 
 body{
-    background-color: rgb(246, 123, 59);
+    background-color: rgb(10, 1, 1);
     font-size:62.5%;
     font-family: 'Poppins',sans-serif;
     color: black;
@@ -19,38 +19,44 @@ body{
 }
 
 h1 {
-    color: rgb(10, 1, 1);
-    font-size: 5vw;
+    color: rgb(246, 238, 238);
+    font-size: 10vw;
     text-align: center;
 
 }
 
 form{
-    color: rgb(10, 1, 1);
-    font-size: 10rem;
+    color: rgb(246, 238, 238);
+    font-size: 5rem;
     text-align: center;
     font-weight: bolder;
+    width: 30vw;
 }
 
 .input {
     border: none;
     color: #444;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem 2rem;
     display: block;
     width: 100%;
+    height: auto;
+
 }
 .input::placeholder {
     color: #d5d5d5;
+    font-size: 4vw;
 }
 
 .input {
-    border: 1px solid black;
+    border: 1px solid #f6eeee;
     color: #444;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem 2rem;
     display: block;
-    width: 100%;
+    width: 30vw;
+    height: 1vh;
+
 }
 .input::placeholder {
     color: #d5d5d5;
@@ -68,12 +74,28 @@ form{
 }
 
 .todos li.completed{
-    color: #3f7a00;
+    color: #4f9400;
 
 }
 
 p{
-    color: black;
-    font-size: 1vw;
+    color: #f6eeee;
+    font-size: 2vw;
 }
 
+@media only screen and (max-width: 850px) {
+
+    h1{
+        margin-bottom: 4vh;
+    }
+
+    form{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+    p{
+        font-size: 4vw;
+    }
+}

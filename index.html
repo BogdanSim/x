@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="testBtn.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
 
 
     <title>Simion_Bogdan_Junior_Web_Dev.</title>
@@ -16,11 +23,11 @@
 <nav class="navbar">
    <a href="#"> <img src="assets/logobold.png" alt="" class="logobold"></a>
     <ul class="nav-links">
-        <li> <a class="mhome" href="#">Home</a></li>
-        <li><a class="mproj" href="#">Projects</a></li>
-        <li><a class="mabout" href="#">About</a></li>
-        <li><a class="mcourses" href="#">Courses</a></li>
-        <li><a href="formular/index.html" class="ctc">Contact</a></li>
+        <li> <a class="mhome" href="#">HOME</a></li>
+        <li><a class="mproj" href="#projects">PROJECTS</a></li>
+        <li><a class="mabout" href="#about">ABOUT</a></li>
+        <li><a class="mcourses" href="#courses">COURSES</a></li>
+        <li><a href="formular/index.html" target="_blank" class="ctc">CONTACT</a></li>
     </ul>
     <img src="assets/burger_menu.png" alt="burger" class="menu-btn">
 
@@ -29,55 +36,54 @@
         <div class="header-content">
             <h2>SIMION BOGDAN FLORIN's</h2>
             <div class="line"></div>
-            <h1>PORTOFOLIO</h1>
-            <a href="ResumeSimionBogdanFlorin.pdf" class="test">Download my resume</a>
+            <h1>PORTFOLIO</h1>
+            <a href="ResumeSimionBogdanFlorin.pdf" target="_blank" class="test">Download my resume</a>
         </div>
 
 
-
+        <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
     </header>
 
-    <section class="events">
+    <section id="projects" class="events">
         <div class="title">
-            <h1 class="projects_title">Some of my projects </h1>
+            <h1 class="projects_title">Projects </h1>
 
         </div>
         <div class="row">
             <div class="col">
                 <img class= "snake" src="assets/snake.png" alt="">
-                <h4>JS - Snake Game</h4>
-                <p>Since I was a kid, I always loved this game, <br> my father was very annoyed because his Nokia's baterry was always low.<br>
-                It was a challenging project and I learned a lot, in my opinion any Junior should try and code a game, helps you a lot.</p>
-                <a href="https://bogdansim.github.io/snake/index.html" class="test">See_Here</a>
+                <h4>JS_Snake Game</h4>
+                <p>Classic snake game using javascript,PC only - Use arrow keys to play.</p>
+                <a href="https://bogdansim.github.io/snake/index.html" target="_blank" class="test">See_Here</a>
 
             </div>
 
             <div class="col">
-                <img class="js-shop" src="assets/jsshop.png" alt="">
-                <h4>JS Online Shop</h4>
-                <p>A simple online shop using HTML, CSS and Javascript, add/ products to the shopping cart. </p>
-                <a href="jsShop/index.html" class="test">See_Here</a>
+                <img class="js-shop" src="assets/crypto.png" alt="">
+                <h4>Live Crypto prices</h4>
+                <p>Live price update using CoinGeko APIs and JS, icons and logos made using Simplified.co </p>
+                <a href="crypto/index.html" target="_blank" class="test">See_Here</a>
 
             </div>
             <div class="col">
                 <img class="bootstrap" src="assets/bootstrap.png" alt="">
                 <h4>Bootstrap_page</h4>
-                <p>A clean, simple Bootstrap page, I love bootstrap because its fast, efficient and good looking.</p>
-                <a href="Bstrap/index.html" class="test">See_Here</a>
+                <p>A clean Bootstrap page, I like bootstrap because its fast, efficient and good looking.</p>
+                <a href="Bstrap/index.html" target="_blank" class="test">See_Here</a>
 
             </div>
 
             <div class="col">
                 <img class="qa" src="assets/qa.png" alt="">
-                <h4>QA_Portofolio</h4>
-                <p>Test case examples & bug reports, I made these just in case I'll ever apply to a QA job.</p>
-                <a href="1.pdf" class="test">See_Here</a>
+                <h4>QA_Portfolio</h4>
+                <p>Test case examples & bug reports, I made these a long time ago just in case I'll ever apply to a QA job.</p>
+                <a href="1.pdf" target="_blank" class="test">See_Here</a>
             </div>
             <div class="col">
                 <img class=wordpress src="assets/todo.png" alt="">
-                <h4>JS-Todo list</h4>
-                <p>Todo list using Js, see instructions in page </p>
-                <a href="todolist/index.html" class="test">See_Here</a>
+                <h4>JS_Todo list</h4>
+                <p>Todo list using Js, see instructions in page. </p>
+                <a href="todolist/index.html" target="_blank" class="test">See_Here</a>
 
             </div>
 
@@ -85,22 +91,23 @@
 
     </section>
 
-    <section class="explore">
+    <section id="about" class="explore">
        <div class="explore-content">
-           <h1> ~ Few words about me ~</h1>
 
            <p class="text">At heart, I am an innovative project enthusiast, which sees a solution and opportunity in every situation.
-               Lately , I have met the fascinating world of<span class="dots">...</span> <span class="moreText"> technology which I see as a window to endless exploration,
+               Lately , I have met the fascinating world of<span class="dots">...</span> <span class="moreText"> technology, which I see as a window to endless exploration,
                and I strongly believe that through my all expertise so far I can contribute to successful projects.<br>
 
                I've been working in various industries since I was 18, warehouses,customer care, construction sites (in UK), in the last 3 years
-               I moved back home and started my own company, at the beginning I opened a coffee shop, 2020 was a difficult year for business
+               I moved back home and started my own company, at the beginning I opened a coffee shop, 2020 was a difficult year for business,
                but it was a beautiful experience, really enjoyed the entrepreneur rush, great feeling to wake up in the morning and grind.<br>
-               I've learned how a company works, budget, taxes, looking after my employee, eventualy things didn't work out so
+               I've learned how a company works, budget, taxes, looking after my employee, eventually things didn't work out, so
                I closed the shop and reoriented.<br>
-               For almost 2 years I work as an insurance broker trough my company for Transilvania Broker franchise with my wife, its not a 2 persons job
+               For almost 2 years I work as an insurance broker using my company for Transilvania Broker franchise with my wife, it's not a 2 person job
                so I had a lot of free time on my hands and decided to learn how to code, and I think it was the best decision, I really enjoy designing
-               websites and website components, love using Canva and other tools.</span>
+               websites and website components, love using Canva, Figma and other tools.
+               My 2020 goal is to find an internship or a junior position and work really hard that I can accumulate knowledge and experience.
+                I'm very motivated and willing to learn and build solid relationships.</span>
                <button class="read-more-btn">
                    Read More
                </button>
@@ -111,36 +118,77 @@
 
 
        </div>
-
+        <section class="spacer"></section>
     </section>
 
-    <section class="tours">
+    <section id="courses" class="tours">
         <div class="row">
             <div class="col conten-col">
                 <h1>Courses</h1>
                 <p>I successfully completed the CodersLabJavascript course in which I spent more than 480 hours of training with specialized teachers and accumulated knowledge regarding: HTML and CSS, JavaScript, SASS, Responsive Web Design (RWD), jQuery, ECMAScript 6, ReactJS, GIT.
                 I got really hooked and started to study on my own, bought a few incredible Udemy courses and completed them all (click on the images to check them out)
-                I am aware that I have a lot of other things to learn maybe my js and react isn't perfect but and I'm open to any challenge, and motivated to learn.</p>
+                I am aware that I have a lot of other things to learn maybe my js and react isn't perfect but I'm open to any challenge.</p>
 
             </div>
             <div class="col image-col">
                 <div class="image-gallery">
-                    <a href="https://coderslab.com/en" target="_blank"> <img class="coderslab" src="assets/coderslab.png"></a>
-                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank"> <img class="bootcamp" src="assets/bootcamp.png"> </a>
-                    <a href="https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274486?start=15#overview" target="_blank"> <img class="sasspic" src="assets/sass.png"> </a>
-                    <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE"> <img class="bootstrappic" src="assets/bootstrappic.png" target="_blank"> </a>
-                    <a href="https://www.udemy.com/course/curs-wordpress-incepatori/learn/lecture/25006226?start=15#reviews" target="_blank"> <img class="wordpresspic" src="assets/wordpresspic.png"> </a>
-                    <a href="https://www.udemy.com/course/testare-manuala-si-automata-curs-qa/learn/lecture/27420642?start=1260#overview" target="_blank"> <img class="testerpic" src="assets/tester.png"> </a>
+                    <a href="https://coderslab.com/en" target="_blank"> <img class="coderslab" src="assets/coderslab.png" alt=""></a>
+                    <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" target="_blank"> <img class="bootcamp" src="assets/bootcamp.png" alt=""> </a>
+                    <a href="https://www.udemy.com/course/advanced-css-and-sass/learn/lecture/8274486?start=15#overview" target="_blank"> <img class="sasspic" src="assets/sass.png" alt=""> </a>
+                    <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank"> <img class="bootstrappic" src="assets/bootstrappic.png" target="_blank" alt=""> </a>
+                    <a href="https://www.udemy.com/course/curs-wordpress-incepatori/learn/lecture/25006226?start=15#reviews" target="_blank"> <img class="wordpresspic" src="assets/wordpresspic.png" alt=""> </a>
+                    <a href="https://www.udemy.com/course/testare-manuala-si-automata-curs-qa/learn/lecture/27420642?start=1260#overview" target="_blank"> <img class="testerpic" src="assets/tester.png" alt=""> </a>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="space"></section>
+<footer class="footer-distributed">
 
-    <section class="footer">
-        <p>Bacau, Romania| Phone:+40759863876 |e-mail: simionbogdanflorin@gmail.com</p>
-        <p>Copyright © 2022 Simion Bogdan Florin</p>
-    </section>
+    <div class="footer-left">
+        <img src="assets/logobold.png" alt>
+
+        <p class="footer-company-name">Copyright © 2022 <strong>Simion Bogdan</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Bacau, Romania (remote & legal right to work in the UK)</span></p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+4 0759 863 876</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:simionbogdanflorin@gmail.com">simionbogdanflorin@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>Skills</span>
+          Critical thinking and problem solving.<br>
+            Teamwork and collaboration.<br>
+            Professionalism and strong work ethic.<br>
+            Oral and written communications skills.<br>
+            Active listening.<br>
+            Strong creative ability.<br>
+            Attention to detail.<br>
+            A logical approach to work.<br>
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com/bog229/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/simion-bogdan-florin-947232227/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://twitter.com/SimBogdan" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://github.com/BogdanSim" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+
 
 
 
@@ -157,7 +205,7 @@
         const readMoreBtn = document.querySelector('.read-more-btn');
         const text = document.querySelector('.text');
 
-        readMoreBtn.addEventListener('click',(e)=>{
+        readMoreBtn.addEventListener('click',()=>{
             text.classList.toggle('show-more');
             if(readMoreBtn.innerText === 'Read More') {
                 readMoreBtn.innerText = 'Read less'

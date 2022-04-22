@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&family=Poppins:wght@100&family=Raleway:ital,wght@0,100;0,600;1,100&display=swap');
 *{
     padding: 0;
@@ -6,7 +7,7 @@
 
 }
 root{
-    font-size: 14px;
+    font-size: 16px;
 }
 a{
     text-decoration: none;
@@ -20,6 +21,8 @@ ul{
 
 body, html{
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -99,6 +102,21 @@ header {
 
 
 }
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #e0b700;
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
+
 .menu-btn{
     position: absolute;
     top: 30px;
@@ -132,6 +150,7 @@ section{
 
 .projects_title{
     color: black;
+    margin-top: 5vh;
 }
 
 
@@ -202,23 +221,18 @@ p{
     flex-direction: column;
 }
 
-.explore-content h1{
-    font-size: 4vmin;
-    margin: 20px;
-    margin-top: 30%;
-    color: rgb(17, 13, 4);
-    background-color: rgba(255, 202, 0, 0.32);
-    border-radius:60px;
 
-}
 
 .explore-content p{
     color: rgba(0, 0, 0, 0.84);
-    background-color: rgba(255, 202, 0, 0.48);
-    font-size: .8rem;
-    border-radius: 50px;
+    background-color: rgba(255, 202, 0, 0.68);
+    font-size: 1em;
+    border-radius: 5px;
     font-style: italic;
-    font-weight: bold;
+    font-weight: bolder;
+    width: 50vw;
+    margin-top: 34vh;
+    text-indent: 20px;
 }
 
 .moreText{
@@ -250,7 +264,7 @@ p{
 }
 
 .conten-col{
-    width: 40%;
+    width: 80%;
 }
 .image-col{
     width: 60%
@@ -260,7 +274,7 @@ p{
 
 
 .tours .row .col{
-    width: 50%;
+    width: 80%;
     height: 45vh;
 
 }
@@ -288,28 +302,11 @@ p{
 }
 .conten-col p{
     padding: 0;
-    margin: 30px auto;
+    margin: 2rem auto;
+    font-size: 1rem;
+    width: 90%;
 }
 
-.conten-col .ctn{
-    margin-left: -100px;
-}
-
-.footer{
-    width: 100%;
-    min-height: 100px;
-    background-color: #e0b700;
-    padding: 20px 80px;
-    margin:0;
-    text-align: center;
-}
-.footer p {
-    color: #070700;
-    margin: 20px auto;
-    font-weight: bold;
-
-
-}
 
 
 
@@ -330,23 +327,22 @@ p{
     .navbar{
         padding: 0;
     }
-    .logo{
-        position: absolute;
-        top: 30px;
-        left: 30px;
-    }
+   .logobold{
+       position: absolute;
+       width: 30vw;
+       height: auto;
+   }
     .nav-links{
         flex-direction: column;
         width: 50%;
         height: 75vh;
         justify-content: center;
-        background: rgba(0, 0, 0, 0.48);
+        background: rgba(239, 237, 237, 0.04);
         margin-top: -900px;
         transition: all 0.5s ease ;
     }
     .mobile-menu{
         margin-top: 0;
-        border-radius: 30% ;
     }
 
 
@@ -361,27 +357,40 @@ p{
 
 .row{
     flex-direction: column;
+    width: 83vw;
 }
 
 .row.col{
     margin:20px auto;
 }
-
+.col h1{
+    margin-top: 9.3vh;
+}
+.col p{
+    width: 100%;
+    font-size: .7rem;
+}
 .col img{
     max-width: 90%
 }
 
 .explore-content{
-    width: 100%;
+    width: 61vw;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
+
 .explore-content p{
-    width: 16rem;
+    width: 100vw;
+    font-size: .7rem;
+    margin-top: 10vh;
+
 }
 
-
+h4{
+    font-size: 1.5rem;
+}
 
 .image-gallery{
     justify-content: center;
@@ -398,13 +407,10 @@ p{
 
 
 
-
-
-.footer{
-    padding: 10px;
-    position:fixed;
-    bottom:0;
+.space{
+    height: 100vh;
 }
+
 }
 
 /* Animations */
